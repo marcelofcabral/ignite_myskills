@@ -10,7 +10,6 @@ interface SkillData {
 }
 
 const Home = () => {
-  console.log('Home (re)rendered');
   const newSkillRef = useRef('');
   const [mySkills, setMySkills] = useState<SkillData[]>([]);
   const [greetings, setGreetings] = useState('');

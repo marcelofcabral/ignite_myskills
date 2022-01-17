@@ -46,7 +46,7 @@ public class MainApplication extends Application implements ReactApplication {
   public void onCreate() {
     super.onCreate();
     SoLoader.init(this, /* native exopackage */ false);
-    initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
+    // initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
   }
 
   /**
@@ -56,6 +56,7 @@ public class MainApplication extends Application implements ReactApplication {
    * @param context
    * @param reactInstanceManager
    */
+  /*
   private static void initializeFlipper(
       Context context, ReactInstanceManager reactInstanceManager) {
     if (BuildConfig.DEBUG) {
@@ -63,7 +64,7 @@ public class MainApplication extends Application implements ReactApplication {
         /*
          We use reflection here to pick up the class that initializes Flipper,
         since Flipper library is not available in release mode
-        */
+        
         Class<?> aClass = Class.forName("com.myskills0.ReactNativeFlipper");
         aClass
             .getMethod("initializeFlipper", Context.class, ReactInstanceManager.class)
@@ -79,4 +80,5 @@ public class MainApplication extends Application implements ReactApplication {
       }
     }
   }
+  */
 }
